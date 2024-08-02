@@ -1,0 +1,249 @@
+:root {
+  --pink: #ff4081;
+
+  /* CODES FOR OTHER COLORS */
+      /* GREEN: 00ff7f */
+      /* BLUE: 7df9ff */
+      /* PURPLE: d891ef */
+      /* ORANGE: ff8c00 */
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  margin: 0;
+  background-color: #232e33;
+  color: white;
+  font-size: 30px;
+}
+
+.info {
+  padding-top: 300px;
+  padding-left: 150px;
+}
+
+.info2 {
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.info3 {
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  border: solid var(--pink) 10px;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover {
+  color: var(--pink)
+}
+
+.name {
+  color: var(--pink);
+}
+
+.typingAbout {
+  color: var(--pink);
+}
+
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+  bottom: 40px;
+}
+
+.images:hover .me {
+  left: 45%;
+}
+
+#navbar {
+  width: 100vw;
+  background-color: #192024;
+  font-weight: bold;
+  font-size: 20px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 3em;
+    position: relative;
+    transition: all ease-in-out 250ms;
+  }
+
+  li:not(:first-child) a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: var(--pink);
+    bottom: -1em;
+    transition: all ease-in-out 250ms;
+  }
+
+  li:not(:first-child) a:hover::after {
+    width: 60%;
+  }
+
+  li:not(:first-child) a:hover {
+    color: var(--pink);
+  }
+
+  li:first-child {
+    margin-right: auto;
+    margin-left: 2em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+  }
+
+  li:first-child a {
+    color: var(--pink); 
+  }
+}
+
+.dropdown {
+  padding-right: 3em;
+}
+
+.dropdown .changes {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #192024;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.dropdown:hover .changes {
+  display: block;
+}
+
+.switchColor {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.switchColor .colors span {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.switchColor .pink {
+  background-color: #ff4081;
+}
+
+.switchColor .orange {
+  background-color: #ff8c00;
+}
+
+.switchColor .green {
+  background-color: #00ff7f;
+}
+
+.switchColor .blue {
+  background-color: #7df9ff;
+}
+
+.switchColor .purple {
+  background-color: #d891ef;
+}
+
+.circle {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--pink);
+  background-color: var(--pink);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 15px */
+@media screen and (max-width: 600px) {
+  div.info {
+    font-size: 15px;
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+
+  div.info2 {
+    font-size: 15px;
+  }
+
+  div.info3 {
+    font-size: 15px;
+  }
+
+  div.images {
+    width: 15%;
+    height: 50%;
+    position: absolute;
+    left: 45%;
+  }
+
+  #navbar {
+    font-size: 15px;
+  }
+
+  .colors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .colors span {
+    height: 15px;
+    width: 15px;
+  }
+  
+}

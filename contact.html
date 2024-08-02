@@ -1,0 +1,45 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pink.css" class="switch" title="pink" disabled>
+  <link rel="stylesheet" href="orange.css" class="switch" title="orange" disabled>
+  <link rel="stylesheet" href="green.css" class="switch" title="green" disabled>
+  <link rel="stylesheet" href="blue.css" class="switch" title="blue" disabled>
+  <link rel="stylesheet" href="purple.css" class="switch" title="purple" disabled>
+  </head>
+  
+  <body>
+    <div id='navbar'>
+      <ul>
+        <li><a href="#">Kim Rodriguez <img src="pen.png" width=30px height=30px> </a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="dropdown">
+          <a href="#"><span class="circle"></span></a>
+          <div class="changes">
+            <div class="switchColor">
+              <div class="colors">
+                <a href="#"><span class="pink" onclick="setColor('pink')"></span></a>
+                <a href="#"><span class="orange" onclick="setColor('orange')"></span></a>
+                <a href="#"><span class="green" onclick="setColor('green')"></span></a>
+                <a href="#"><span class="blue" onclick="setColor('blue')"></span></a>
+                <a href="#"><span class="purple" onclick="setColor('purple')"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="info3">
+        <h2>email: <a href=mailto:"krrod7@bu.edu" class="link" target="_blank">krrod7@bu.edu</a></h2>
+        <h2>linkedin: <a href="https://www.linkedin.com/in/kimberly-rodriguez-65ba6a23a/" class="link" target="_blank">Kim Rodriguez</a></h2>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+  </body>
