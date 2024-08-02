@@ -215,6 +215,7 @@ body {
     font-size: 15px;
     padding-top: 100px;
     padding-left: 100px;
+    padding-bottom: 80px;
   }
 
   div.info2 {
@@ -229,7 +230,6 @@ body {
   div.images {
     width: 15%;
     height: 50%;
-    margin-top: 10px;
   }
 
   #navbar {
