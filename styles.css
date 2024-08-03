@@ -83,58 +83,71 @@ body {
   left: 45%;
 }
 
-#navbar {
-  width: 100vw;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #192024;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  color: var(--pink);
+  font-size: 30px;
+  font-family: "Dancing Script", sans-serif;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
   font-weight: bold;
   font-size: 20px;
+}
 
-  ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1em 0;
-  }
+.navbar .nav-links li {
+  display: inline;
+}
 
-  li a {
-    text-decoration: none;
-    color: white;
-    padding-right: 3em;
-    position: relative;
-    transition: all ease-in-out 250ms;
-  }
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 3em;
+  position: relative;
+  transition: all ease-in-out 250ms;
+}
 
-  li:not(:first-child) a::after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 0.4em;
-    width: 0%;
-    background-color: var(--pink);
-    bottom: -1em;
-    transition: all ease-in-out 250ms;
-  }
+.navbar .nav-links a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.4em;
+  width: 0%;
+  background-color: var(--pink);
+  bottom: -1em;
+  transition: all ease-in-out 250ms;
+}
 
-  li:not(:first-child) a:hover::after {
-    width: 60%;
-  }
+.navbar .nav-links a:hover::after {
+  width: 60%;
+}
 
-  li:not(:first-child) a:hover {
-    color: var(--pink);
-  }
+.navbar .nav-links a:hover {
+  color: var(--pink);
+}
 
-  li:first-child {
-    margin-right: auto;
-    margin-left: 2em;
-    font-family: 'Dancing Script', cursive;
-    font-size: 32px;
-  }
+.navbar .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
 
-  li:first-child a {
-    color: var(--pink); 
-  }
+.navbar .hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 4px;
+  border-radius: 5px;
 }
 
 .dropdown {
@@ -197,7 +210,7 @@ body {
 
 .fade-in {
   opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
+  animation: fadeIn 2s ease-in forwards;
 }
 
 @keyframes fadeIn {
@@ -215,6 +228,7 @@ body {
     font-size: 15px;
     padding-top: 100px;
     padding-left: 100px;
+    padding-bottom: 80px;
   }
 
   div.info2 {
@@ -229,12 +243,21 @@ body {
   div.images {
     width: 15%;
     height: 50%;
-    position: absolute;
-    left: 45%;
   }
 
-  #navbar {
-    font-size: 15px;
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .nav-links.active {
+      display: flex;
+  }
+
+  .navbar .hamburger {
+      display: flex;
   }
 
   .colors {
