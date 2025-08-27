@@ -2,10 +2,10 @@
   --pink: #ff4081;
 
   /* CODES FOR OTHER COLORS */
-      /* GREEN: 00ff7f */
-      /* BLUE: 7df9ff */
-      /* PURPLE: d891ef */
-      /* ORANGE: ff8c00 */
+  /* GREEN: 00ff7f */
+  /* BLUE: 7df9ff */
+  /* PURPLE: d891ef */
+  /* ORANGE: ff8c00 */
 }
 
 body {
@@ -21,13 +21,31 @@ body {
   padding-left: 150px;
 }
 
+.learn {
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+
 .info2 {
   padding-top: 100px;
   padding-left: 150px;
   padding-right: 150px;
 }
 
+div.info2 h4 {
+  text-align: center;
+}
+
 .info3 {
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  border: solid var(--pink) 10px;
+  padding: 5px;
+}
+
+.info4 {
   text-align: center;
   box-sizing: border-box;
   display: inline-block;
@@ -159,7 +177,7 @@ body {
   position: absolute;
   right: 0;
   background-color: #192024;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .dropdown:hover .changes {
@@ -215,10 +233,11 @@ body {
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
+
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -229,6 +248,11 @@ body {
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 15px */
 @media screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 35px;
+  }
+
   div.info {
     font-size: 15px;
     padding-top: 100px;
@@ -245,9 +269,28 @@ body {
     font-size: 15px;
   }
 
+  div.info4 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .learn {
+    font-size: 15px;
+  }
+
+  div.container img {
+    width: 50vh;
+    height: 30vh;
+  }
+
+  div.container {
+    height: 30vh;
+  }
+
   div.images {
-    width: 15%;
-    height: 50%;
+    width: 100%;
+    height: auto;
     padding-right: 5em;
   }
 
@@ -259,11 +302,11 @@ body {
   }
 
   .navbar .nav-links.active {
-      display: flex;
+    display: flex;
   }
 
   .navbar .hamburger {
-      display: flex;
+    display: flex;
   }
 
   .colors {
@@ -275,5 +318,5 @@ body {
     height: 15px;
     width: 15px;
   }
-  
+
 }
