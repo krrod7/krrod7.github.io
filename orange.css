@@ -21,13 +21,31 @@ body {
   padding-left: 150px;
 }
 
+.learn {
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+
 .info2 {
   padding-top: 100px;
   padding-left: 150px;
   padding-right: 150px;
 }
 
+div.info2 h4 {
+  text-align: center;
+}
+
 .info3 {
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  border: solid var(--orange) 10px;
+  padding: 5px;
+}
+
+.info4 {
   text-align: center;
   box-sizing: border-box;
   display: inline-block;
@@ -230,6 +248,11 @@ body {
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 15px */
 @media screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 35px;
+  }
+
   div.info {
     font-size: 15px;
     padding-top: 100px;
@@ -246,9 +269,28 @@ body {
     font-size: 15px;
   }
 
+  div.info4 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .learn {
+    font-size: 15px;
+  }
+
+  div.container img {
+    width: 50vh;
+    height: 30vh;
+  }
+
+  div.container {
+    height: 30vh;
+  }
+
   div.images {
-    width: 15%;
-    height: 50%;
+    width: 100%;
+    height: auto;
     padding-right: 5em;
   }
 
