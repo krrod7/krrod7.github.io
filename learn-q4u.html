@@ -1,0 +1,59 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pink.css" class="switch" title="pink" disabled>
+  <link rel="stylesheet" href="orange.css" class="switch" title="orange" disabled>
+  <link rel="stylesheet" href="green.css" class="switch" title="green" disabled>
+  <link rel="stylesheet" href="blue.css" class="switch" title="blue" disabled>
+  <link rel="stylesheet" href="purple.css" class="switch" title="purple" disabled>
+</head>
+
+<body>
+  <nav class="navbar">
+    <strong class="logo">Kim Rodriguez <img src="pen.png" width=30px height=30px></strong>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="dropdown">
+        <a href="#"><span class="circle"></span></a>
+        <div class="changes">
+          <div class="switchColor">
+            <div class="colors">
+              <span class="pink" onclick="setColor('pink')"></span>
+              <span class="orange" onclick="setColor('orange')"></span>
+              <span class="green" onclick="setColor('green')"></span>
+              <span class="blue" onclick="setColor('blue')"></span>
+              <span class="purple" onclick="setColor('purple')"></span>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="info2">
+    <h1 class="titles">TRY IT OUT</h1>
+    <h4>Go back to the project home page and click on the Q4U image!</h4>
+    <h1 class="titles">ABOUT</h1>
+    <h4>Collaborated with a friend to design and develop a web application that allows you to find shows based on your
+      interests in genre, decade, streaming service, and runtime. I coded the backend, while my friend designed the
+      frontend.</h4>
+    <h1 class="titles">DEV TOOLS</h1>
+    <h4>Javascript, HTML, and CSS, coded on Visual Studio Code</h4>
+    <h1 class="titles">APIS</h1>
+    <h4>The Movie Database (TMDB) API</h4>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
