@@ -2,10 +2,10 @@
   --blue: #7df9ff;
 
   /* CODES FOR OTHER COLORS */
-      /* GREEN: 00ff7f */
-      /* BLUE: 7df9ff */
-      /* PURPLE: d891ef */
-      /* ORANGE: ff8c00 */
+  /* GREEN: 00ff7f */
+  /* BLUE: 7df9ff */
+  /* PURPLE: d891ef */
+  /* ORANGE: ff8c00 */
 }
 
 body {
@@ -39,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 40vh;
 }
 
 .link {
@@ -159,7 +159,7 @@ body {
   position: absolute;
   right: 0;
   background-color: #192024;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .dropdown:hover .changes {
@@ -215,11 +215,17 @@ body {
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
+
   to {
-      opacity: 1;
+    opacity: 1;
   }
+}
+
+.titles {
+  text-align: center;
+  color: var(--blue);
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 15px */
@@ -254,11 +260,11 @@ body {
   }
 
   .navbar .nav-links.active {
-      display: flex;
+    display: flex;
   }
 
   .navbar .hamburger {
-      display: flex;
+    display: flex;
   }
 
   .colors {
@@ -270,5 +276,5 @@ body {
     height: 15px;
     width: 15px;
   }
-  
+
 }
