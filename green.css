@@ -289,8 +289,8 @@ div.info2 h4 {
   }
 
   div.images {
-    width: 100%;
-    height: auto;
+    width: 15%;
+    height: 50%;
     padding-right: 5em;
   }
 
@@ -320,3 +320,4 @@ div.info2 h4 {
   }
 
 }
+
